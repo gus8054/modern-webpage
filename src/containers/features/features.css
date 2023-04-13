@@ -1,0 +1,38 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 3rem;
+}
+.features-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+.features__heading {
+  width: 100%;
+}
+.features__heading h1 {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.features__heading p {
+  color: var(--color-subtext);
+  font-size: 1.2rem;
+}
+@media screen and (55rem<= width) {
+  .features {
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 0rem;
+    column-gap: 5rem;
+  }
+  .features__heading {
+    flex: 2;
+  }
+  .features-container {
+    flex: 3;
+  }
+}

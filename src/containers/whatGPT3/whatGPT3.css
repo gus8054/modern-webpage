@@ -1,0 +1,61 @@
+.whatGTP3 {
+  background: var(--color-blog);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 3rem;
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(180deg, rgba(0, 6, 140, 1) 0%, rgba(21, 30, 193, 1) 85%, rgba(22, 95, 150, 1) 100%);
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(180deg, rgba(0, 6, 140, 1) 0%, rgba(21, 30, 193, 1) 85%, rgba(22, 95, 150, 1) 100%);
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(180deg, rgba(0, 6, 140, 1) 0%, rgba(21, 30, 193, 1) 85%, rgba(22, 95, 150, 1) 100%);
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#165F96', endColorstr='#00068C', GradientType=1 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(180deg, rgba(0, 6, 140, 1) 0%, rgba(21, 30, 193, 1) 85%, rgba(22, 95, 150, 1) 100%);
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(180deg, rgba(0, 6, 140, 1) 0%, rgba(21, 30, 193, 1) 85%, rgba(22, 95, 150, 1) 100%);
+}
+.whatGPT__features-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+.whatGPT__heading {
+  width: 100%;
+}
+.whatGPT__heading h1 {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.whatGPT__heading p {
+  color: var(--color-subtext);
+  font-size: 1.2rem;
+}
+@media screen and (37rem<= width) {
+  .whatGPT__heading {
+    display: flex;
+    align-items: center;
+  }
+  .whatGPT__heading h1 {
+    flex: 1;
+  }
+  .whatGPT__heading p {
+    flex: 1;
+    text-align: right;
+  }
+  .whatGPT__features-container {
+    flex-direction: row;
+    column-gap: 3rem;
+    row-gap: 0rem;
+  }
+}

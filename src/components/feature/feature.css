@@ -1,0 +1,31 @@
+.feature__title {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.feature__title::before {
+  content: "";
+  display: block;
+  margin-bottom: 1rem;
+  width: 6rem;
+  height: 0.5rem;
+  background: var(--gradient-bar);
+}
+.feature__text {
+  color: var(--color-text);
+  line-height: 1.5;
+}
+@media screen and (37rem<= width) {
+  .feature_main {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 2rem;
+  }
+  .feature_main h4 {
+    flex: 1;
+  }
+  .feature_main p {
+    flex: 2;
+  }
+}
